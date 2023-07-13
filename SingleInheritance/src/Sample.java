@@ -12,6 +12,7 @@ class D extends B
 	void get2()
 	{
 		System.out.println("Your Dervid class is::"+empname);
+		get1();
 	}
 }
 public class Sample {
@@ -19,7 +20,7 @@ public class Sample {
 	public static void main(String[] args) {
 		
 		D f1=new D();
-		f1.get1();
+		//f1.get1();
 		f1.get2();
 
 	}
