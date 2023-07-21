@@ -4,6 +4,8 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import java.awt.Font;
+import javax.swing.JButton;
 
 public class HomePage extends JFrame {
 
@@ -37,8 +39,29 @@ public class HomePage extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("HRSYSTEM");
-		lblNewLabel.setBounds(175, 28, 110, 23);
-		contentPane.add(lblNewLabel);
+		JPanel panel = new JPanel();
+		panel.setBounds(23, 29, 379, 211);
+		contentPane.add(panel);
+		panel.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("HR MAPPING SYSTEM");
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 13));
+		lblNewLabel.setBounds(116, 22, 161, 21);
+		panel.add(lblNewLabel);
+		
+		JButton btnNewButton = new JButton("Register");
+		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnNewButton.setBounds(133, 65, 114, 21);
+		panel.add(btnNewButton);
+		
+		JButton btnNewButton_1 = new JButton("AdminLogin");
+		btnNewButton_1.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnNewButton_1.setBounds(133, 118, 114, 21);
+		panel.add(btnNewButton_1);
+		
+		JButton btnNewButton_2 = new JButton("UserLogin");
+		btnNewButton_2.setFont(new Font("Tahoma", Font.BOLD, 10));
+		btnNewButton_2.setBounds(133, 180, 114, 21);
+		panel.add(btnNewButton_2);
 	}
 }
