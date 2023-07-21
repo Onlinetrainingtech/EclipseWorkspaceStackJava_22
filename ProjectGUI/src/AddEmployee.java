@@ -48,15 +48,15 @@ public class AddEmployee extends JFrame {
 		lblNewLabel.setBounds(147, 10, 153, 13);
 		contentPane.add(lblNewLabel);
 		
-		JLabel lblNewLabel_1 = new JLabel("ProductId");
+		JLabel lblNewLabel_1 = new JLabel("EmployeeId");
 		lblNewLabel_1.setBounds(25, 53, 82, 13);
 		contentPane.add(lblNewLabel_1);
 		
-		JLabel lblNewLabel_2 = new JLabel("ProductName");
+		JLabel lblNewLabel_2 = new JLabel("EmpName");
 		lblNewLabel_2.setBounds(25, 102, 82, 13);
 		contentPane.add(lblNewLabel_2);
 		
-		JLabel lblNewLabel_3 = new JLabel("ProductPrice");
+		JLabel lblNewLabel_3 = new JLabel("EmpSalary");
 		lblNewLabel_3.setBounds(25, 154, 63, 13);
 		contentPane.add(lblNewLabel_3);
 		

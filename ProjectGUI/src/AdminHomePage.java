@@ -7,6 +7,8 @@ import javax.swing.JLabel;
 import java.awt.Font;
 import java.awt.Color;
 import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class AdminHomePage extends JFrame {
 
@@ -47,6 +49,12 @@ public class AdminHomePage extends JFrame {
 		contentPane.add(lblNewLabel);
 		
 		JButton btnNewButton = new JButton("AddEmployee");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				new AddEmployee().setVisible(true);
+			}
+		});
 		btnNewButton.setBounds(151, 80, 130, 21);
 		contentPane.add(btnNewButton);
 		
